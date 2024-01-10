@@ -1,7 +1,19 @@
 import array
 
-my_array = array.array('i') # i means int
-print(my_array) # there no elements to store in memory
+#my_array = array.array('i') # i means int
+#print(my_array) # there no elements to store in memory
 
-my_array1 = array.array('i', [1,2,3,4])
-print(my_array1)
+arr1 = array.array('i', [1,2,3,4,5,6])
+print(arr1)
+
+# INSERTING VALUE INTO ARRAY
+#arr1.insert(2, 9) # (id, value)  //// if id number is higher than lenght of array, then value is gonna be added at the end of the array 
+                                    # (ie. array is 4 in lenght, id of added value is 100, value is gonna be added at 5th)
+#print(arr1) 
+
+# ARRAY TRAVERSAL (MOVE THROUGHT EVERY ELEMENT)
+def traverseArray(array):
+    for i in array:
+        print(i)
+
+traverseArray(arr1)
