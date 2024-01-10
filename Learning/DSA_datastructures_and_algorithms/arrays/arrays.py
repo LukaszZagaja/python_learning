@@ -4,7 +4,7 @@ import array
 #print(my_array) # there no elements to store in memory
 
 arr1 = array.array('i', [1,2,3,4,5,6])
-print(arr1)
+#print(arr1)
 
 # INSERTING VALUE INTO ARRAY
 #arr1.insert(2, 9) # (id, value)  //// if id number is higher than lenght of array, then value is gonna be added at the end of the array 
@@ -16,4 +16,16 @@ def traverseArray(array):
     for i in array:
         print(i)
 
-traverseArray(arr1)
+#traverseArray(arr1)
+
+
+# ACCESSING AN ELEMENT OF ARRAY
+arr2 = array.array('i', [1,2,3,4,5,6])
+
+def accesElement(array, index):
+    if index >= len(array):
+        print('There is not any element in this index')
+    else:
+        print(array[index])
+
+accesElement(arr2, 1)
