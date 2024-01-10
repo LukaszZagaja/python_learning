@@ -38,4 +38,9 @@ def linear_search(array, target):
             return i
     return -1
 
-print(linear_search(arr3, 8))
+#print(linear_search(arr3, 8))
+
+# DELETING AN ELEMENT FROM ARRAY
+arr3.remove(1) # it counts not from 0 but from 1 (ie. not 0,1,2,3 but 1,2,3,4)
+print(arr3)
+
