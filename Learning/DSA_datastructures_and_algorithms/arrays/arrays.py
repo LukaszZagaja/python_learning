@@ -28,4 +28,14 @@ def accesElement(array, index):
     else:
         print(array[index])
 
-accesElement(arr2, 1)
+#accesElement(arr2, 1)
+
+# SEARCHING FOR AN ELEMENT IN ARRAY
+arr3 = array.array('i', [1,2,3,4,5])
+def linear_search(array, target):
+    for i in range(len(arr3)):
+        if array[i] == target:
+            return i
+    return -1
+
+print(linear_search(arr3, 8))
