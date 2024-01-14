@@ -6,4 +6,10 @@ import numpy as numpy
 # day 4: 15, 18, 14, 9
 
 two_dim_arr = numpy.array([[11, 15, 10, 6], [10, 14, 11, 5], [12, 17, 12, 8], [15, 18, 14, 9]])
-print(two_dim_arr)
+print('\n', two_dim_arr)
+
+#new_two_dim = numpy.insert(two_dim_arr, 0, [[1,2,3,4]], axis=0)
+#print(new_two_dim)
+
+new_two_dim = numpy.append(two_dim_arr, [[1,2,3,4]], axis=0)
+print(new_two_dim)
