@@ -12,5 +12,15 @@ print('\n', two_dim_arr)
                             #     this 0 ^ means in which row the new array is added. 
 #print(new_two_dim)
 
-new_two_dim = numpy.append(two_dim_arr, [[1,2,3,4]], axis=0) # adds at the end of the array, depends on axis
-print(new_two_dim)
+#new_two_dim = numpy.append(two_dim_arr, [[1,2,3,4]], axis=0) # adds at the end of the array, depends on axis
+#print(new_two_dim)
+
+def accesElements(array, rowIndex, columnIndex):
+    if rowIndex >= len(array) or columnIndex >= len(array[0]): # len(array) returns number of rows, len(array[0]) returns number of collumns
+        print('Incorrect index ')
+    else:
+        print(array[rowIndex][columnIndex])
+
+
+print('\n')
+accesElements(two_dim_arr, 1, 3)
