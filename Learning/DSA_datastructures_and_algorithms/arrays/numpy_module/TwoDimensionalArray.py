@@ -23,4 +23,11 @@ def accesElements(array, rowIndex, columnIndex):
 
 
 print('\n')
-accesElements(two_dim_arr, 1, 3)
+# accesElements(two_dim_arr, 1, 3)
+
+def traverseTwoDimArray(array):
+    for i in range(len(array)): 
+        for j in range(len(array[0])): 
+            print(array[i][j])
+
+traverseTwoDimArray(two_dim_arr)
