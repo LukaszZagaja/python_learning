@@ -39,6 +39,9 @@ def searchTwoDimArray(array, value):
                 return f'The value is located at index: i: {i} j: {j}'
     return 'The element is not found'
 
-print(searchTwoDimArray(two_dim_arr, 14))
-print(searchTwoDimArray(two_dim_arr, 1))
+#print(searchTwoDimArray(two_dim_arr, 14))
+#print(searchTwoDimArray(two_dim_arr, 1))
 
+
+tda = numpy.delete(two_dim_arr, 0, axis=0) #numbers equals id of row/collumn you want to 'delete' |||| axis is the same as earlier axis=1 > column, axis=0 > row
+print(tda)
