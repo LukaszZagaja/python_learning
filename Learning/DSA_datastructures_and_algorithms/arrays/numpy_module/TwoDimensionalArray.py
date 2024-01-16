@@ -27,7 +27,18 @@ print('\n')
 
 def traverseTwoDimArray(array):
     for i in range(len(array)): 
-        for j in range(len(array[0])): 
+        for j in range(len(array[0])): # <- 0 here returns number of collumns
             print(array[i][j])
 
-traverseTwoDimArray(two_dim_arr)
+# traverseTwoDimArray(two_dim_arr)
+
+def searchTwoDimArray(array, value):
+    for i  in range(len(array)):
+        for j in range(len(array[0])):
+            if value == array[i][j]:
+                return f'The value is located at index: i: {i} j: {j}'
+    return 'The element is not found'
+
+print(searchTwoDimArray(two_dim_arr, 14))
+print(searchTwoDimArray(two_dim_arr, 1))
+
