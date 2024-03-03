@@ -8,7 +8,7 @@ def quick_sort(arr, left, right):
 def partition(arr, left, right):
     i = left # i searches for element bigger than pivot, moves from left to right
     j = right-1 # defines the point right of the pivot (i.e.    [val1,val2,val3,pivot,point]) 
-                # j searches for element smaller than pivot, moves from right ro left
+                # j searches for element smaller than pivot, moves from right to left
     # i and j moves till they cross their ways
     pivot = arr[right]
     while i < j: #while they didnt cross 
