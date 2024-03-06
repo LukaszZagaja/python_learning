@@ -1,3 +1,4 @@
+# factorial == silnia
 def factorial(n):
     if n<0 or int(n)!=n:
         return 'Number is smaller than 0 and/or is not int'
