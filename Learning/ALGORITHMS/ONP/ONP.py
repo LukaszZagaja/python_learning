@@ -1,3 +1,5 @@
+# https://www.youtube.com/watch?v=vq-nUF0G4fI&ab_channel=mycodeschool     <-> do powtorzenia przed matura, w tym filmie jest dokladnie wytlumaczone
+
 operator = {
     '+':1,
     '-':1,
